@@ -1,0 +1,16 @@
+@use "/src/styles/utils";
+
+.button {
+  @extend %button;
+  color: $c-gray-dark;
+  border: 1px $c-turquoise solid;
+  background: $c-main-bg;
+
+  @include hover($_property: "background", $_toValue: $c-turquoise);
+  @include hover($_property: "color", $_toValue: $c-main-bg);
+
+  &--mobile {
+    background: $c-yellow;
+    border: none;
+  }
+}

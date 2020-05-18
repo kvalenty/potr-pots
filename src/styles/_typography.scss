@@ -1,3 +1,73 @@
-h1 {
-  @extend %h1;
+%title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1;
+}
+
+%h1 {
+  font-weight: 700;
+  font-size: 58px;
+}
+
+%h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+%h3 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+%h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+%subtitle-main {
+  font-family: "Raleway", sans-serif;
+}
+
+%subtitle-1 {
+  @extend %subtitle-main;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+%subtitle-mobile-1 {
+  @extend %subtitle-main;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+%subtitle-2 {
+  @extend %subtitle-main;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+%subtitle-3 {
+  @extend %subtitle-main;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+%subtitle-4 {
+  @extend %subtitle-main;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+%subtitle-5 {
+  @extend %subtitle-main;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+%button {
+  @extend %subtitle-main;
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
 }

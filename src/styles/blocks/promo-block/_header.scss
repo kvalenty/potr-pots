@@ -1,0 +1,29 @@
+@use "/src/styles/utils";
+
+.header {
+  width: 100%;
+  position: relative;
+
+  &__content {
+    padding-top: 22px;
+  }
+
+  &__bg-trapeze {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 80%;
+    height: 100vh;
+    max-height: 480px;
+
+    background: url("/images/trapeze.png") center / cover no-repeat;
+    z-index: -1;
+  }
+
+  &__img {
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
