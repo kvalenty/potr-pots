@@ -1,7 +1,7 @@
 @use "/src/styles/utils";
 
 body {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: $font-bebas, sans-serif;
   line-height: 1.5;
   color: $c-main-text;
   background: $c-main-bg;
@@ -15,4 +15,8 @@ body {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 35px;
+  }
 }
